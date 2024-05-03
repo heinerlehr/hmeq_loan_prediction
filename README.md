@@ -1,1 +1,12 @@
-sdfdssd
+# EDA - Exploratory Data Analysis and modelling of loan defaults
+## Introduction
+In the US in 2023, about 1% of mortagages are considered sub-prime (down from 2% in 2022) according to the (Office of the Comptroller's)[https://www.occ.gov/publications-and-resources/publications/mortgage-metrics-reports/index-mortgage-metrics-reports.html] OCC Mortgage Metrics Report. The total residential mortgage debt was about 12 trillion USD. This means that "bad loans" represent about 120 billion USD. According to Global Credit Data, a private organisation that owns the key Loss Given Default (LGD) metric of a wide range of banks, in North America the recovery rate in 2023 was (84%)[https://globalcreditdata.org/wp-content/uploads/2023/06/GCD-CRE-RR-Report-2023.pdf], i.e. 84% of the value of a loan could be recovered after a default. Therefore, the total cost of the industry for defaulting loans is in the range of 20 billion USD per year. In addition to the direct loss of profit, banks are also affected by loan defaulting rates because their loss given default rate LGD (= 1-recovery rate) is a key measure how many reserves a bank must have on their balance sheet. Defaulting loans therefore represent a very significant cost to banks. In addition, a bank with a lower defaulting rate will have better profits from home loans and therefore potentially be able to lend money at a lower interest rate, increasing their market share of the home loan market.
+
+It is therefore of triple interest to reduce the number of defaulting loans - while not diminishing the number of conceded loans. This calls for a more precise approval process and elimination of human bias and erroneous judgment. It is important to note that the approval process is conditioned by the (Equal Credit Opportunity Act)[https://www.law.cornell.edu/uscode/text/15/1691] which makes it unlawful to base such an approval process on factors such as race, color, religion, national origin, sex etc.
+
+## Objective
+The objective of this project is to use the Home Equity Dataset (HMEQ) to build a model that is able to predict a potentially defaulting loan application with precision. More weight will be given to incorrect predictions that a loan will be repaid than to incorrect prediction that a loan will indeed default, i.e. we will value loss reduction over revenue increase. Predictions need to be interpretable to (i) prove compliance to the Equal Credit Opportunity Act and (ii) be able to justify a rejection.
+
+The key questions for this study are:
+- What are the main factors that contribute to loan defaulting?
+- Are we able to predict with good precision whether a particular loan application should be rejected?
